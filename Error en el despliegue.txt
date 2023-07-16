@@ -1,0 +1,24 @@
+profe no pude hacer el despliegue me aroja errores, los cualers fue revisando para poder resolvetr sin exito deje el ultimo log de error, este tiene relacion al archivo package.json, replance por el del proyecto blockbuster pero no paso nada despues cambie por lo de la documentacion de yarm pero tamcpo tube exito.
+
+Jul 16 07:39:47 PM    [changelog] https://github.com/heartcombo/devise/blob/main/CHANGELOG.md
+Jul 16 07:39:47 PM    [upgrade guide] https://github.com/heartcombo/devise/wiki/How-To:-Upgrade-to-Devise-4.9.0-%5BHotwire-Turbo-integration%5D
+Jul 16 07:39:50 PM    yarn install v1.22.19
+Jul 16 07:39:50 PM  [1/4] Resolving packages...
+Jul 16 07:39:50 PM  [2/4] Fetching packages...
+Jul 16 07:39:50 PM  [3/4] Linking dependencies...
+Jul 16 07:39:50 PM  [4/4] Building fresh packages...
+Jul 16 07:39:50 PM  Done in 0.70s.
+Jul 16 07:39:50 PM  yarn run v1.22.19
+Jul 16 07:39:51 PM  $ jest
+Jul 16 07:39:51 PM  /bin/sh: 1: jest: not found
+Jul 16 07:39:51 PM  error Command failed with exit code 127.
+Jul 16 07:39:51 PM  info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+Jul 16 07:39:51 PM  rake aborted!
+Jul 16 07:39:51 PM  jsbundling-rails: Command build failed, ensure `yarn build` runs without errors
+Jul 16 07:39:51 PM  /opt/render/project/.gems/ruby/3.2.0/gems/jsbundling-rails-1.1.2/lib/tasks/jsbundling/build.rake:12:in `block (2 levels) in <main>'
+Jul 16 07:39:51 PM  /opt/render/project/.gems/ruby/3.2.0/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+Jul 16 07:39:51 PM  /opt/render/project/.gems/bin/bundle:108:in `load'
+Jul 16 07:39:51 PM  /opt/render/project/.gems/bin/bundle:108:in `<main>'
+Jul 16 07:39:51 PM  Tasks: TOP => assets:precompile => javascript:build
+Jul 16 07:39:51 PM  (See full trace by running task with --trace)
+Jul 16 07:39:51 PM  ==> Build failed 😞
