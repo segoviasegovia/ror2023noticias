@@ -67,4 +67,23 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
+
+  config.action_mailer.perform_caching = false
+  config.action_mailer.delivery_method = :sendmail
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_options = {from: 'victor.segovia@zohomail.com'}
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.zoho.com',
+    port: 587,
+    domain: 'zohomail.com', # Reemplaza con tu dominio  -- qs.cl
+    user_name: 'victor.segovia@zohomail.com', # Reemplaza con tu dirección de correo
+    password: 'Casa0028.', # Reemplaza con tu contraseña de correo
+    authentication: 'SSL',
+    enable_starttls_auto: true
+  }
+
 end

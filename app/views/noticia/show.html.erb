@@ -2,9 +2,13 @@
 
 <%= render @noticium %>
 
-<div>
-  <%= link_to "Edit this noticium", edit_noticium_path(@noticium) %> |
-  <%= link_to "Back to noticia", noticia_path %>
 
-  <%= button_to "Destroy this noticium", @noticium, method: :delete %>
+<div>
+  <%= link_to "Regresar a noticias" ,noticia_path %>
+    <% if user_signed_in? %>
+      <% if current_user.id==@noticium.user_id %>
+        <%= link_to "Editar Noticia" , edit_noticium_path(@noticium) %> |
+        <%= button_to "Eliminar Noticia" , @noticium, method: :delete %>
+    <% end %>
+  <% end %>
 </div>

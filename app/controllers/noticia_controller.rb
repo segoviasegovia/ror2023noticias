@@ -1,6 +1,6 @@
 class NoticiaController < ApplicationController
   before_action :set_noticium, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except:[:index,:show]
   # GET /noticia or /noticia.json
   def index
     @noticia = Noticium.all
@@ -22,6 +22,7 @@ class NoticiaController < ApplicationController
   # POST /noticia or /noticia.json
   def create
     @noticium = Noticium.new(noticium_params)
+    @noticium.user = current_user
 
     respond_to do |format|
       if @noticium.save
