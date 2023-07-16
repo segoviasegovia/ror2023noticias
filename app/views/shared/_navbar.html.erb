@@ -18,6 +18,11 @@
                     </a>
                     <ul class="dropdown-menu">
                         <% if user_signed_in? %>
+                            <% if current_user.name %>
+                                Hola <%= current_user.name %>
+                            <% else %>
+                                Hola <%= current_user.email %>
+                            <% end %>
                             <li>
                                 <%= button_to 'Cerrar sesión' , destroy_user_session_path, class: 'dropdown-item' , method: :delete %>
                             </li>

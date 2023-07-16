@@ -82,7 +82,7 @@ Rails.application.configure do
     domain: 'zohomail.com', # Reemplaza con tu dominio  -- qs.cl
     user_name: 'victor.segovia@zohomail.com', # Reemplaza con tu dirección de correo
     password: 'Casa0028.', # Reemplaza con tu contraseña de correo
-    authentication: 'SSL',
+    authentication: 'plain',
     enable_starttls_auto: true
   }
 
